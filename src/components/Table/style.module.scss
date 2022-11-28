@@ -1,0 +1,107 @@
+.Container {
+  overflow: auto;
+  width: 97%;
+}
+
+.Table {
+  background: #e8e8e8;
+  border-radius: 10px;
+  border-collapse: separate;
+}
+.hideText {
+  max-width: 95%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.ColumBase {
+  padding-left: 1.25rem;
+  padding-right: 0.5rem;
+  text-align: left;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #6b6b6b;
+  @media (max-width: 768px) {
+    padding: 0.45rem;
+  }
+}
+.Column1 {
+  @extend .ColumBase;
+  width: 360px;
+  @media (max-width: 768px) {
+    font-size: 75%;
+  }
+}
+.Column2 {
+  @extend .ColumBase;
+  width: 265px;
+  @media (max-width: 768px) {
+    font-size: 80%;
+  }
+}
+.Column3 {
+  @extend .ColumBase;
+  width: 157px;
+  @media (max-width: 768px) {
+    font-size: 80%;
+  }
+}
+
+.Column4 {
+  @extend .ColumBase;
+  width: 167px;
+}
+
+.Column5 {
+  @extend .ColumBase;
+  width: 293px;
+}
+
+.HeadColumn {
+  border-radius: 10px;
+  color: #4f4f4f;
+  height: 56px;
+  background: #dcdcdc;
+  font-weight: 500;
+  padding-left: 10px;
+  text-align: left;
+
+  @media (max-width: 768px) {
+    padding: 0.5rem;
+    font-size: 80%;
+  }
+}
+
+.TableRow {
+  height: 56px;
+}
+.TableRow:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+.ContainerTH {
+  display: flex;
+  justify-content: space-between;
+}
+
+.OrderListButton {
+  transition: transform 0.2s;
+  height: 1.875rem;
+  width: 1.875rem;
+  border: none;
+  background-color: transparent;
+  transform: rotate(0);
+
+  &:hover {
+    border-radius: 50%;
+    background-color: #d1d1d3;
+  }
+  &__active {
+    transform: rotate(180deg);
+    background-color: #d1d1d3;
+    border-radius: 50%;
+  }
+}
